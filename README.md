@@ -1,4 +1,4 @@
 Haunted-Mansion
 ===============
 <!doctype html>
-Hi
+<html>
