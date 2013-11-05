@@ -4,7 +4,7 @@ Haunted-Mansion
 <html>
 <head>
 <script type="text/javascript" src="Haunted.js"></script>
- <title>Haunted Mansion</title>
+ <title> <b>Haunted Mansion <b/></title>
 </head>
 
 <body>
