@@ -1,2 +1,3 @@
 Haunted-Mansion
 ===============
+<!doctype html>
