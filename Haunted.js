@@ -1,3 +1,4 @@
-// This is the JS file for Haunted Mansion
-
 function startGame()
+{
+return document.getElementById('outputDiv').innerHTML ='Background info'
+}
