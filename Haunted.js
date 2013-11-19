@@ -1,9 +1,17 @@
-
+/*
+Name= document.getElementById('nameBox').value;
+Job= document.getElementById('Jobbox').value
+*/
 function startGame()
 {
 
-	return document.getElementById('outputDiv').innerHTML ='Background info'
+	return document.getElementById('outputDiv').innerHTML ="Background info. <br><br> 	<button onclick=' Continue();'> Click to continue</button>"
 
+}
+
+function Continue()
+{
+	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button>Check out Mansion</button><button>Look for help down the road</button>"
 }
 
 /*
