@@ -4,6 +4,7 @@ Haunted-Mansion
 <html>
 <head>
 <script type="text/javascript" src="Haunted.js"></script>
+<link rel="stylesheet" href="Haunted.css" type="text/css"> 
  <title> <b>Haunted Mansion <b/></title>
 </head>
 
@@ -11,8 +12,12 @@ Haunted-Mansion
   <p>Choose Your Own Adventure Game</p>
   <p> Type your Name
    <input id="nameBox" type="text" size="8"> </p>
-   <p> Type your Job
-   <input id="jobBox" type="text" size="8"> </p>
+   <p> Select your Job
+   <select id="job">
+      <option value="Blacksmith">Blacksmith</option>
+      <option value="Tailor">Tailor</option>
+      <option value="Shop Keeper">Shop Keeper</option>
+   </select>
   	<br>
 	  <button id="Play" onclick="startGame();"> Want to go on an adventure? </button> </p>
 	  <hr>
