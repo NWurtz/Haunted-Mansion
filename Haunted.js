@@ -1,3 +1,5 @@
+
+
 function startGame()
 {
 	return document.getElementById('outputDiv').innerHTML ="Background info. <br><br> 	<button onclick=' Continue();'> Click to continue</button>"
@@ -94,62 +96,84 @@ function Treasure()
 }
 function Study()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Painting()'>Look at the Paintings</button>    <button onclick=' Road()'>Look for help down the road</button>"
+	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Painting()'>Look at the Paintings</button>    <button onclick=' Desk()'>Check the Desk</button> <button onclick=' Foyer()'>Go back to the Foyer</button> "
 }
-/*
-function Continue()
+
+function Desk()
+{
+	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Bottle()'>Smell Bottle</button>    <button onclick=' Painting()'>Look at the the Paintings</button> <button onclick=' Foyer()'>Go back to the Foyer</button>"
+}
+function Bottle()
+{
+	return document.getElementById('outputDiv').innerHTML =" End. <br><br>  <button onclick=' startGame()'>Play Again?</button>"
+}
+function Painting()
+{
+	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Button()'>Press Button</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>"
+}
+function Button()
+{
+	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Bookcase()'>Go down passage behind bookcase</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>"
+}
+function Bookcase()
+{
+	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Riddle()'>Continue down Hallway</button>"
+}
+function Riddle()
+{
+	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br> <input id='riddleInput' type='text' size ='5'>  <button onclick=' Riddle2(riddleInput)'> Enter</button>"
+}
+function Riddle2(riddleInput)
+{
+	var output;
+	var userInput;
+	var action;
+
+	output= document.getElementById('output');
+	userInput= document.getElementById('riddleInput').value;
+	riddle=userInput.toLowerCase();
+	 if (riddle === 'match'){
+		output.innerHTML= "<button onclick=' Right()'>You are right</button>";
+		}else
+		output.innerHTML= "<button onclick=' Wrong()'>You are wrong</button>";
+}
+function Right()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
+function Wrong()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
+function Run2()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
+function Fight()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
+function Winfight()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
+function Climb()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
+function Hide()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
+function Escape()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
+function Stay()
 {
 	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
 }
-function Continue()
-{
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
-}
-function Continue()
-{
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
-}
-function Continue()
-{
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
-}
-function Continue()
-{
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
-}
-*/
+
 
 /*
 // Show and hide
