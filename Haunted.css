@@ -1,6 +1,8 @@
 body
 {
 background-color:#cccccc;
+background-image:url('background1.jpg');
+background-repeat:no-repeat;
 color:red;
 text-align:center;
 }
