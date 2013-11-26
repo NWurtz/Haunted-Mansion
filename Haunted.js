@@ -1,5 +1,4 @@
 
-
 /*function startGame()
 {
 enable display continue
@@ -22,8 +21,16 @@ Each function here should be displaying the next div and not displaying the prev
 }
 */
 
+var player;
+
+
 function startGame()
 {
+player = {
+    name: document.getElementById('namebox').value,
+    profession: document.getElementById('job').value,
+};
+
  document.getElementById('startGame').style.display ='block';
 }
 
