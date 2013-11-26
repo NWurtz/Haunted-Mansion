@@ -1,13 +1,36 @@
 
 
-function startGame()
+/*function startGame()
+{
+enable display continue
+disable 
+}
+
+also look under resources- multiples pages in one file show/hide
+
+
+
+
+
+NICK IF You see this. If you can start taking the functions and putting them into divs instead of here in the java script. I'll leave an example in the HTML. If you can put them in divs that woudl be great.
+Each function here should be displaying the next div and not displaying the previous one. The buttons go with the divs you will see. Thank you Nick I will have the story filled in by the time we get back. 
+*/
+
+/*function startGame()
 {
 	return document.getElementById('outputDiv').innerHTML ="Background info. <br><br> 	<button onclick=' Continue();'> Click to continue</button>"
+}
+*/
+
+function startGame()
+{
+ document.getElementById('startGame').style.display ='block';
 }
 
 function Continue()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
+ document.getElementById('Continue').style.display='block';
+ document.getElementById('startGame').style.display ='none';
 }
 
 function Road()
@@ -129,13 +152,14 @@ function Riddle2(riddleInput)
 	var userInput;
 	var action;
 
-	output= document.getElementById('output');
+	output= document.getElementById('outputDiv');
 	userInput= document.getElementById('riddleInput').value;
 	riddle=userInput.toLowerCase();
 	 if (riddle === 'match'){
 		output.innerHTML= "<button onclick=' Right()'>You are right</button>";
-		}else
+		}else{
 		output.innerHTML= "<button onclick=' Wrong()'>You are wrong</button>";
+		}
 }
 function Right()
 {
