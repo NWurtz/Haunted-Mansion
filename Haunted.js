@@ -1,37 +1,26 @@
-
-/*function startGame()
-{
-enable display continue
-disable 
-}
-
-also look under resources- multiples pages in one file show/hide
-
-
-
-
-
-NICK IF You see this. If you can start taking the functions and putting them into divs instead of here in the java script. I'll leave an example in the HTML. If you can put them in divs that woudl be great.
-Each function here should be displaying the next div and not displaying the previous one. The buttons go with the divs you will see. Thank you Nick I will have the story filled in by the time we get back. 
-*/
-
-/*function startGame()
-{
-	return document.getElementById('outputDiv').innerHTML ="Background info. <br><br> 	<button onclick=' Continue();'> Click to continue</button>"
-}
-*/
-
-var player;
-
-
-function startGame()
-{
+/*
 player = {
     name: document.getElementById('namebox').value,
     profession: document.getElementById('job').value,
-};
+		 }
+*/
+
+function startGame()
+{
 
  document.getElementById('startGame').style.display ='block';
+ document.getElementById('Eat').style.display ='none';
+ document.getElementById('Run').style.display ='none';
+ document.getElementById('Gold').style.display ='none';
+ document.getElementById('Crown').style.display ='none';
+ document.getElementById('Bottle').style.display ='none';
+ document.getElementById('Road').style.display ='none';
+ document.getElementById('Right').style.display ='none';
+ document.getElementById('Fight').style.display ='none';
+ document.getElementById('Winfight').style.display ='none';
+ document.getElementById('Stay').style.display ='none';
+ document.getElementById('Climb').style.display ='none';
+ document.getElementById('Escape').style.display ='none';
 }
 
 function Continue()
@@ -42,179 +31,212 @@ function Continue()
 
 function Road()
 {
-	return document.getElementById('outputDiv').innerHTML =" You start to proceed down the road. The wind and rain start to pick up the farther away from the mansion you go. The street lights flicker giving off a dim light every couple of seconds or so. After about 5 minutes of walking down the road the streetlights stop flickering and go out. You feel a strong force hit the back of your head. You are knocked unconscious. You wake up in the foyer of the mansion.   <br><br>  <button onclick=' Foyer();'>Click to Continue</button> "
+document.getElementById('Road').style.display='block';
+document.getElementById('Continue').style.display ='none';	
 }
 function Foyer()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Kitchen()'>Go to Kitchen</button>    <button onclick=' Study()'>Go to Study</button>    <button>Go Upstairs</button>"
+document.getElementById('Foyer').style.display='block';
+document.getElementById('Road').style.display ='none';
+document.getElementById('Continue').style.display ='none';
+document.getElementById('Kitchen').style.display='none';
+document.getElementById('Door1').style.display='none';
+document.getElementById('Kitchen2').style.display='none';
+document.getElementById('Food').style.display='none';
+document.getElementById('Floor').style.display='none';
+document.getElementById('Study').style.display='none';
+document.getElementById('Desk').style.display='none';
+document.getElementById('Painting').style.display='none';
+document.getElementById('Button').style.display='none';
+document.getElementById('Escape').style.display='none';
+document.getElementById('Stay').style.display='none';
 }
 
 function Kitchen()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Door1()'>Check Door</button>    <button onclick=' Kitchen2()'>Search the Kitchen</button> <button onclick=' Foyer()'>Go back to the Foyer</button>"
+document.getElementById('Kitchen').style.display='block';
+document.getElementById('Foyer').style.display ='none';
+document.getElementById('Door1').style.display ='none';
 }
 function Door1()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Kitchen2()'>Search Kitchen</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>"
+document.getElementById('Door1').style.display='block';
+document.getElementById('Kitchen').style.display ='none';
 }
 function Kitchen2()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' floor()'>Lift loose floor board</button>    <button onclick=' Food()'>Make a Sandwhich</button> <button onclick=' Foyer()'>Go back to the Foyer</button>"
+document.getElementById('Kitchen2').style.display='block';
+document.getElementById('Door1').style.display ='none';
+document.getElementById('Kitchen').style.display ='none';
 }
 function Food()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Eat()'>Eat the Sandwhich</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>"
+document.getElementById('Food').style.display='block';
+document.getElementById('Kitchen2').style.display ='none';
 }
 function Eat()
 {
-	return document.getElementById('outputDiv').innerHTML =" You take a bite of what seems to be a glorious sandwhich. You cant remember having a better sandwhich than this one... <br> you start feeling funny. Your mouth starts tingling. Soon your entire body is shaking frantically. You drop the sandwhich and start walking backward. how you a sandwhich be doing this... how ...how... <br> Poison! <br> You are dead. Don\'t Trust food! <br><br>  <button onclick=' startGame()'>Play Again?</button>"
+document.getElementById('Eat').style.display='block';
+document.getElementById('Food').style.display ='none';
 }
 
-function floor()
+function Floor()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Basement()'>Go Down the stairs</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>"
+document.getElementById('Floor').style.display='block';
+document.getElementById('Kitchen2').style.display ='none';
 }
 function Basement()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Shining()'>Open the Shining Door</button>    <button onclick=' Jail()'>Look in the jail cell</button> <button onclick=' Boiler()'>Go to the boiler room</button>"
+document.getElementById('Basement').style.display='block';
+document.getElementById('Floor').style.display ='none';
+document.getElementById('Key').style.display='none';
+document.getElementById('Jail').style.display='none';
 }
 function Boiler()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Key()'>Pick up the Key</button>    <button onclick=' Basement()'>Go back to the Basement</button>"
+document.getElementById('Boiler').style.display='block';
+document.getElementById('Basement').style.display ='none';
 }
 function Key()
 {
+document.getElementById('Key').style.display='block';
+document.getElementById('Boiler').style.display ='none';
 	//Enable True
-	return document.getElementById('outputDiv').innerHTML=" More Story. <br><br>   <button onclick=' Basement()'>Go back to the Basement</button>"
 }
 function Jail()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Basement()'>Go back to the Basement</button>"
+document.getElementById('Jail').style.display='block';
+document.getElementById('Basement').style.display ='none';
 }
 function Shining()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Takegold()'>Take the Gold</button>    <button onclick=' Door2()'>Go through the Door in the back</button>"
+document.getElementById('Shining').style.display='block';
+document.getElementById('Basement').style.display ='none';
 }
 function Takegold()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Run()'>Run for Door</button> <button onclick=' Gold()'>Take MORE Gold</button> "
+document.getElementById('Takegold').style.display='block';
+document.getElementById('Shining').style.display ='none';
 }
 function Run()
 {
-	return document.getElementById('outputDiv').innerHTML =" End. <br><br> <button onclick=' startGame()'>Play Again?</button>"
+document.getElementById('Run').style.display='block';
+document.getElementById('Takegold').style.display ='none';
 }
 function Gold()
 {
-	return document.getElementById('outputDiv').innerHTML =" End. <br><br> <button onclick=' startGame()'>Play Again?</button>"
+document.getElementById('Gold').style.display='block';
+document.getElementById('Takegold').style.display ='none';
 }
 function Door2()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Crown()'>Take Crown off Skeleton</button>    <button onclick=' Locked()'>Try to open Door</button>"
+document.getElementById('Door2').style.display='block';
+document.getElementById('Shining').style.display ='none';
 }
 function Crown()
 {
-	return document.getElementById('outputDiv').innerHTML =" End <br><br> <button onclick=' startGame()'>Play Again?</button>"
+document.getElementById('Crown').style.display='block';
+document.getElementById('Door2').style.display ='none';
+Document.getElementById('Locked').style.display='none';
 }
 function Locked()
 {
+document.getElementById('Locked').style.display='block';
+document.getElementById('Door2').style.display ='none';
 	//if ture treasure if not true crown
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Treasure()'>Go through the Door</button>    <button onclick=' Crown()'>Take Crown off Skeleton</button>"
-}
+}	
 function Treasure()
 {
-	return document.getElementById('outputDiv').innerHTML =" End. <br><br> <button onclick=' startGame()'>Play Again?</button>"
+document.getElementById('Treasure').style.display='block';
+document.getElementById('Locked').style.display ='none';
 }
 function Study()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Painting()'>Look at the Paintings</button>    <button onclick=' Desk()'>Check the Desk</button> <button onclick=' Foyer()'>Go back to the Foyer</button> "
+document.getElementById('Study').style.display='block';
+document.getElementById('Foyer').style.display ='none';
 }
 
 function Desk()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Bottle()'>Smell Bottle</button>    <button onclick=' Painting()'>Look at the the Paintings</button> <button onclick=' Foyer()'>Go back to the Foyer</button>"
+document.getElementById('Desk').style.display='block';
+document.getElementById('Study').style.display ='none';
 }
 function Bottle()
 {
-	return document.getElementById('outputDiv').innerHTML =" End. <br><br>  <button onclick=' startGame()'>Play Again?</button>"
+document.getElementById('Bottle').style.display='block';
+document.getElementById('Desk').style.display ='none';
 }
 function Painting()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Button()'>Press Button</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>"
+document.getElementById('Painting').style.display='block';
+document.getElementById('Study').style.display ='none';
+document.getElementById('Desk').style.display ='none';
+document.getElementById('Bottle').style.display ='none';
 }
 function Button()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Bookcase()'>Go down passage behind bookcase</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>"
+document.getElementById('Button').style.display='block';
+document.getElementById('Painting').style.display ='none';
 }
 function Bookcase()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Riddle()'>Continue down Hallway</button>"
+document.getElementById('Bookcase').style.display='block';
+document.getElementById('Button').style.display ='none';
 }
 function Riddle()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br> <input id='riddleInput' type='text' size ='5'>  <button onclick=' Riddle2(riddleInput)'> Enter</button>"
+document.getElementById('Riddle').style.display='block';
+document.getElementById('Bookcase').style.display ='none';
 }
 function Riddle2(riddleInput)
 {
-	var output;
+document.getElementById('Riddle').style.display ='none';
 	var userInput;
 	var action;
 
-	output= document.getElementById('outputDiv');
 	userInput= document.getElementById('riddleInput').value;
 	riddle=userInput.toLowerCase();
 	 if (riddle === 'match'){
-		output.innerHTML= "<button onclick=' Right()'>You are right</button>";
+		document.getElementById('Right').style.display='block';
 		}else{
-		output.innerHTML= "<button onclick=' Wrong()'>You are wrong</button>";
+		document.getElementById('Wrong').style.display='block';
 		}
 }
-function Right()
-{
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
-}
-function Wrong()
-{
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
-}
+
 function Run2()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
+document.getElementById('Run2').style.display='block';
+document.getElementById('Wrong').style.display ='none';
 }
 function Fight()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
+//if fighter winfight if anything else fight
+document.getElementById('Fight').style.display='block';
+document.getElementById('Wrong').style.display ='none';
 }
 function Winfight()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
+document.getElementById('Winfight').style.display='block';
+document.getElementById('Wrong').style.display ='none';
 }
 function Climb()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
+document.getElementById('Climb').style.display='block';
+document.getElementById('Run2').style.display ='none';
 }
 function Hide()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
+document.getElementById('Hide').style.display='block';
+document.getElementById('Run2').style.display ='none';
 }
 function Escape()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
+document.getElementById('Escape').style.display='block';
+document.getElementById('Hide').style.display ='none';
 }
 function Stay()
 {
-	return document.getElementById('outputDiv').innerHTML =" More Story. <br><br>  <button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>"
+document.getElementById('Stay').style.display='block';
+document.getElementById('Hide').style.display ='none';
 }
 
-
-/*
-// Show and hide
-	var btn;
-
-	btn.style.visibility = 'hidden';
-	btn.style.visibility = 'visible';
-
-	btn.style.display = 'none';
-	btn.style.display = 'inline'; // for a div or block element, set it to 'block'
-
-
-*/
