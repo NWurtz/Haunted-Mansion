@@ -17,13 +17,14 @@ Haunted-Mansion
       <option value="Tour Guide">Tour Guide</option>
       <option value="Tailor">Tailor</option>
       <option value="Shop Keeper">Shop Keeper</option>
-      <option value="Locksmith">Locksmith</option>
       <option value="Kick Fighter">Kick Fighter</option>
    </select>
   	<br>
 	  <button id="Play" onclick="startGame();"> Want to go on an adventure? </button> </p>
 	  <hr>
-    	<div id="startGame">
+    <div id="outputDiv"></div>
+
+	<div id="startGame">
 	Background Story
 	<br><br>
 	<button onclick=' Continue();'> Click to continue</button>
@@ -31,14 +32,199 @@ Haunted-Mansion
 	<div id="Continue">
 	Continue Story
 	<br><br>
-	<button onclick='<button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>
+	<button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>
 	</div>
-    </body>
-    </html>
-
-
-
-
+	<div id="Road">
+	You start to proceed down the road. 
+	The wind and rain start to pick up the farther away from the mansion you go. 
+	The street lights flicker giving off a dim light every couple of seconds or so. 
+	After about 5 minutes of walking down the road the street lights stop flickering and go out. 
+	You feel a strong force hit the back of your head. 
+	You are knocked unconscious. 
+	You wake up in the foyer of the mansion.
+	<br><br>
+	<button onclick=' Foyer()'>Click to Continue</button>    
+	</div>
+	<div id="Foyer">
+	Foyer
+	<br><br>
+	<button onclick=' Kitchen()'>Go to Kitchen</button>    <button onclick=' Study()'>Go to Study</button>  
+	</div>
+	<div id="Kitchen">
+	Continue Story
+	<br><br>
+	<button onclick=' Door1()'>Check Door</button>    <button onclick=' Kitchen2()'>Search the Kitchen</button> <button onclick=' Foyer()'>Go back to the Foyer</button>
+	</div>
+	<div id="Door1">
+	Continue Story
+	<br><br>
+	<button onclick=' Kitchen2()'>Search Kitchen</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
+	</div>
+	<div id="Kitchen2">
+	Continue Story
+	<br><br>
+	<button onclick=' Food()'>Make a Sandwich</button>    <button onclick=' Floor()'>Lift loose floor board</button>
+	</div>
+	<div id="Food">
+	Continue Story
+	<br><br>
+	<button onclick=' Eat()'>Eat the Sandwhich</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
+	</div>
+	<div id="Eat">
+	You take a bite of what seems to be a glorious sandwhich. You cant remember having a better sandwhich than this one... 
+	<br> you start feeling funny. Your mouth starts tingling. Soon your entire body is shaking frantically. 
+	You drop the sandwhich and start walking backward. how you a sandwhich be doing this... how ...how... 
+	<br> Poison! 
+	<br> You are dead. Don\'t Trust food! 
+	<br><br>  <button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Floor">
+	Continue Story
+	<br><br>
+	<button onclick=' Basement()'>Go Down the stairs</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
+	</div>
+	<div id="Basement">
+	Continue Story
+	<br><br>
+	<button onclick=' Shining()'>Open the Shining Door</button>    <button onclick=' Jail()'>Look in the jail cell</button> <button onclick=' Boiler()'>Go to the boiler room</button>
+	</div>
+	<div id="Boiler">
+	Continue Story
+	<br><br>
+	<button onclick=' Key()'>Pick up the Key</button>    <button onclick=' Basement()'>Go back to the Basement</button>
+	</div>
+	<div id="Key">
+	Continue Story
+	<br><br>
+	<button onclick=' Basement()'>Go back to the Basement</button>
+	</div>
+	<div id="Jail">
+	Continue Story
+	<br><br>
+	<button onclick=' Basement()'>Go back to the Basement</button>
+	</div>
+	<div id="Shining">
+	Continue Story
+	<br><br>
+	<button onclick=' Takegold()'>Take the Gold</button>    <button onclick=' Door2()'>Go through the Door in the back</button>
+	</div>
+	<div id="Takegold">
+	Continue Story
+	<br><br>
+	<button onclick=' Run()'>Run for Door</button> <button onclick=' Gold()'>Take MORE Gold</button> 
+	</div>
+	<div id="Run">
+	Continue Story
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Gold">
+	Continue Story
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Door2">
+	Continue Story
+	<br><br>
+	<button onclick=' Crown()'>Take Crown off Skeleton</button>    <button onclick=' Locked()'>Try to open Door</button>
+	</div>
+	<div id="Crown">
+	Continue Story
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Locked">
+	Continue Story
+	<br><br>
+	<button onclick=' Treasure()'>Go through the Door</button>    <button onclick=' Crown()'>Take Crown off Skeleton</button>
+	</div>
+	<div id="Treasure">
+	Continue Story
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Study">
+	Continue Story
+	<br><br>
+	<button onclick=' Painting()'>Look at the Paintings</button>    <button onclick=' Desk()'>Check the Desk</button> <button onclick=' Foyer()'>Go back to the Foyer</button> 
+	</div>
+	<div id="Desk">
+	Continue Story
+	<br><br>
+	<button onclick=' Bottle()'>Smell Bottle</button>    <button onclick=' Painting()'>Look at the the Paintings</button> <button onclick=' Foyer()'>Go back to the Foyer</button>
+	</div>
+	<div id="Bottle">
+	Continue Story
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Painting">
+	Continue Story
+	<br><br>
+	<button onclick=' Button()'>Press Button</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
+	</div>
+	<div id="Button">
+	Continue Story
+	<br><br>
+	<button onclick=' Bookcase()'>Go down passage behind bookcase</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
+	</div>
+	<div id="Bookcase">
+	Continue Story
+	<br><br>
+	<button onclick=' Riddle()'>Continue down Hallway</button>
+	</div>
+	<div id="Riddle">
+	There is a riddle here. The answer is match
+	<br><br>
+	<input id='riddleInput' type='text' size ='5'>  <button onclick=' Riddle2(riddleInput)'> Enter</button>
+	</div>
+	<div id="Right">
+	You appear outside. You leave with your life congrats.
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Wrong">
+	Continue Story enter arena and whatnot
+	<br><br>
+	<button onclick=' Run2()'>Run away</button>    <button onclick=' Fight()'>Fight the monster</button>
+	</div>
+	<div id="Run2">
+	Continue Story
+	<br><br>
+	<button onclick=' Climb()'>Attempt to climb out</button>    <button onclick=' Hide()'>Hide in a small space in the wall</button>
+	</div>
+	<div id="Fight">
+	You lost the fight
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Winfight">
+	Win the fight
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Climb">
+	Can't climb out
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Hide">
+	Wall knocked down
+	<br><br>
+	<button onclick=' Escape()'>See a chance and run out</button>    <button onclick=' Stay()'>See if the monster is dead</button>
+	</div>
+	<div id="Escape">
+	Continue Story
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+	<div id="Stay">
+	Continue Story
+	<br><br>
+	<button onclick=' startGame()'>Play Again?</button>
+	</div>
+   </body>
+  </html>
 
 
 
