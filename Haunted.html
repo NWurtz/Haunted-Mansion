@@ -1,10 +1,8 @@
-Haunted-Mansion
-
 <!doctype html>
 <html>
 <head>
 <script type="text/javascript" src="Haunted.js"></script>
-<link rel="stylesheet" href="Haunted.css" type="text/css"> 
+<link rel="stylesheet" href="Haunted.css" type="text/css">
  <title> <b>Haunted Mansion <b/></title>
 </head>
 
@@ -16,9 +14,10 @@ Haunted-Mansion
    <select id="job">
       <option value="Tour Guide">Tour Guide</option>
       <option value="Tailor">Tailor</option>
-      <option value="Shop Keeper">Shop Keeper</option>
-      <option value="Kick Fighter">Kick Fighter</option>
+      <option value="Kick Fighter">Shop Keeper</option>
+      <option value="Dragon Slayer">Kick Fighter</option>
    </select>
+  	<br>
   	<br>
 	  <button id="Play" onclick="startGame();"> Want to go on an adventure? </button> </p>
 	  <hr>
@@ -35,20 +34,20 @@ Haunted-Mansion
 	<button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>
 	</div>
 	<div id="Road">
-	You start to proceed down the road. 
-	The wind and rain start to pick up the farther away from the mansion you go. 
-	The street lights flicker giving off a dim light every couple of seconds or so. 
-	After about 5 minutes of walking down the road the street lights stop flickering and go out. 
-	You feel a strong force hit the back of your head. 
-	You are knocked unconscious. 
+	You start to proceed down the road.
+	The wind and rain start to pick up the farther away from the mansion you go.
+	The street lights flicker giving off a dim light every couple of seconds or so.
+	After about 5 minutes of walking down the road the street lights stop flickering and go out.
+	You feel a strong force hit the back of your head.
+	You are knocked unconscious.
 	You wake up in the foyer of the mansion.
 	<br><br>
-	<button onclick=' Foyer()'>Click to Continue</button>    
+	<button onclick=' Foyer()'>Click to Continue</button>
 	</div>
 	<div id="Foyer">
 	Foyer
 	<br><br>
-	<button onclick=' Kitchen()'>Go to Kitchen</button>    <button onclick=' Study()'>Go to Study</button>  
+	<button onclick=' Kitchen()'>Go to Kitchen</button>    <button onclick=' Study()'>Go to Study</button>
 	</div>
 	<div id="Kitchen">
 	Continue Story
@@ -71,11 +70,11 @@ Haunted-Mansion
 	<button onclick=' Eat()'>Eat the Sandwhich</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
 	<div id="Eat">
-	You take a bite of what seems to be a glorious sandwhich. You cant remember having a better sandwhich than this one... 
-	<br> you start feeling funny. Your mouth starts tingling. Soon your entire body is shaking frantically. 
-	You drop the sandwhich and start walking backward. how you a sandwhich be doing this... how ...how... 
-	<br> Poison! 
-	<br> You are dead. Don\'t Trust food! 
+	You take a bite of what seems to be a glorious sandwhich. You cant remember having a better sandwhich than this one...
+	<br> you start feeling funny. Your mouth starts tingling. Soon your entire body is shaking frantically.
+	You drop the sandwhich and start walking backward. how you a sandwhich be doing this... how ...how...
+	<br> Poison!
+	<br> You are dead. Don't Trust food!
 	<br><br>  <button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Floor">
@@ -111,7 +110,7 @@ Haunted-Mansion
 	<div id="Takegold">
 	Continue Story
 	<br><br>
-	<button onclick=' Run()'>Run for Door</button> <button onclick=' Gold()'>Take MORE Gold</button> 
+	<button onclick=' Run()'>Run for Door</button> <button onclick=' Gold()'>Take MORE Gold</button>
 	</div>
 	<div id="Run">
 	Continue Story
@@ -136,7 +135,7 @@ Haunted-Mansion
 	<div id="Locked">
 	Continue Story
 	<br><br>
-	<button onclick=' Treasure()'>Go through the Door</button>    <button onclick=' Crown()'>Take Crown off Skeleton</button>
+	<button onclick=' Crown()'>Take Crown off Skeleton</button>
 	</div>
 	<div id="Treasure">
 	Continue Story
@@ -146,7 +145,7 @@ Haunted-Mansion
 	<div id="Study">
 	Continue Story
 	<br><br>
-	<button onclick=' Painting()'>Look at the Paintings</button>    <button onclick=' Desk()'>Check the Desk</button> <button onclick=' Foyer()'>Go back to the Foyer</button> 
+	<button onclick=' Painting()'>Look at the Paintings</button>    <button onclick=' Desk()'>Check the Desk</button> <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
 	<div id="Desk">
 	Continue Story
@@ -174,7 +173,11 @@ Haunted-Mansion
 	<button onclick=' Riddle()'>Continue down Hallway</button>
 	</div>
 	<div id="Riddle">
-	There is a riddle here. The answer is match
+	On wall you see riddle
+	<br><br>
+	There is a certain crime, that if it is attempted, is punishable,
+	<br>but if it is committied, it is not punishable.
+	<br> What is the crime?
 	<br><br>
 	<input id='riddleInput' type='text' size ='5'>  <button onclick=' Riddle2(riddleInput)'> Enter</button>
 	</div>
