@@ -19,10 +19,17 @@ function startGame()
  document.getElementById('Fight').style.display ='none';
  document.getElementById('Winfight').style.display ='none';
  document.getElementById('Stay').style.display ='none';
+ document.getElementById('Locked').style.display ='none';
  document.getElementById('Climb').style.display ='none';
  document.getElementById('Escape').style.display ='none';
+ document.getElementById('Treasure').style.display ='none';
 }
-
+/*
+player = {
+    name: document.getElementById('namebox').value,
+    profession: document.getElementById('job').value,
+		 }
+*/
 function Continue()
 {
  document.getElementById('Continue').style.display='block';
@@ -32,7 +39,7 @@ function Continue()
 function Road()
 {
 document.getElementById('Road').style.display='block';
-document.getElementById('Continue').style.display ='none';	
+document.getElementById('Continue').style.display ='none';
 }
 function Foyer()
 {
@@ -101,7 +108,7 @@ function Key()
 {
 document.getElementById('Key').style.display='block';
 document.getElementById('Boiler').style.display ='none';
-	//Enable True
+	Key='Haskey'
 }
 function Jail()
 {
@@ -133,18 +140,23 @@ function Door2()
 document.getElementById('Door2').style.display='block';
 document.getElementById('Shining').style.display ='none';
 }
+function Locked()
+{
+	document.getElementById('Door2').style.display ='none';
+
+	if(Key==='Haskey'){
+		document.getElementById('Treasure').style.display='block';
+	}else{
+		document.getElementById('Locked').style.display='block';
+	}
+}
 function Crown()
 {
 document.getElementById('Crown').style.display='block';
 document.getElementById('Door2').style.display ='none';
-Document.getElementById('Locked').style.display='none';
+document.getElementById('Locked').style.display='none';
 }
-function Locked()
-{
-document.getElementById('Locked').style.display='block';
-document.getElementById('Door2').style.display ='none';
-	//if ture treasure if not true crown
-}	
+
 function Treasure()
 {
 document.getElementById('Treasure').style.display='block';
@@ -192,11 +204,10 @@ function Riddle2(riddleInput)
 {
 document.getElementById('Riddle').style.display ='none';
 	var userInput;
-	var action;
 
 	userInput= document.getElementById('riddleInput').value;
 	riddle=userInput.toLowerCase();
-	 if (riddle === 'match'){
+	 if (riddle === 'suicide'){
 		document.getElementById('Right').style.display='block';
 		}else{
 		document.getElementById('Wrong').style.display='block';
@@ -210,7 +221,6 @@ document.getElementById('Wrong').style.display ='none';
 }
 function Fight()
 {
-//if fighter winfight if anything else fight
 document.getElementById('Fight').style.display='block';
 document.getElementById('Wrong').style.display ='none';
 }
