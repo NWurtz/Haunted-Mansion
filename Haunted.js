@@ -24,12 +24,12 @@ function startGame()
  document.getElementById('Escape').style.display ='none';
  document.getElementById('Treasure').style.display ='none';
 }
-/*
+
 player = {
     name: document.getElementById('namebox').value,
     profession: document.getElementById('job').value,
-		 }
-*/
+	}
+
 function Continue()
 {
  document.getElementById('Continue').style.display='block';
