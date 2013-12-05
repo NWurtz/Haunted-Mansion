@@ -2,6 +2,7 @@
 <html>
 <head>
 <script type="text/javascript" src="Haunted.js"></script>
+<script type="text/javascript" src="http://www.balance3e.com/random.js"></script>
 <link rel="stylesheet" href="Haunted.css" type="text/css">
  <title> <b>Haunted Mansion <b/></title>
 </head>
@@ -10,20 +11,20 @@
   <p>Choose Your Own Adventure Game</p>
   <p> Type your Name
    <input id="nameBox" type="text" size="8"> </p>
-   <p> Select your Job
-   <select id="gender">
+   <p> Select your Gender
+   <select id="genderBox">
       <option value="Male">Male</option>
       <option value="Female">Female</option>
-   </select>
-   <select id="job">
+   </select></p>
+   <p> Select your job
+   <select id="jobBox">
       <option value="Tour Guide">Tour Guide</option>
       <option value="Tailor">Tailor</option>
-      <option value="Kick Fighter">Shop Keeper</option>
-      <option value="Dragon Slayer">Kick Fighter</option>
-   </select>
+      <option value="Shop Keeper">Shop Keeper</option>
+      <option value="Kick Fighter">Kick Fighter</option>
+   </select> </p>
   	<br>
-  	<br>
-	  <button id="Play" onclick="startGame();"> Want to go on an adventure? </button> </p>
+	  <button id="Play" onclick="startGame()"> Want to go on an adventure? </button> </p>
 	  <hr>
     <div id="outputDiv"></div>
 
@@ -79,7 +80,7 @@
 	You use the ingredients that you found to make your favorite sandwhich.
 	Do you want to eat it?
 	<br><br>
-	<button onclick=' Eat()'>Eat the Sandwhich</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
+	<button onclick='Eat(); Endphrase()'>Eat the Sandwhich</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
 	<div id="Eat">
 	You take a bite of what seems to be a glorious sandwhich. You cant remember having a better sandwhich than this one...
@@ -87,6 +88,7 @@
 	You drop the sandwhich and start walking backward. how you a sandwhich be doing this... how ...how...
 	<br> Poison!
 	<br> You are dead. Don't Trust food!
+	<br>
 	<br><br>  <button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Floor">
@@ -122,7 +124,7 @@
 	<div id="Takegold">
 	Continue Story
 	<br><br>
-	<button onclick=' Run()'>Run for Door</button> <button onclick=' Gold()'>Take MORE Gold</button>
+	<button onclick=' Run(); Endphrase()'>Run for Door</button> <button onclick=' Gold(); Endphrase()'>Take MORE Gold</button>
 	</div>
 	<div id="Run">
 	Continue Story
@@ -137,7 +139,7 @@
 	<div id="Door2">
 	Continue Story
 	<br><br>
-	<button onclick=' Crown()'>Take Crown off Skeleton</button>    <button onclick=' Locked()'>Try to open Door</button>
+	<button onclick=' Crown(); Endphrase()'>Take Crown off Skeleton</button>    <button onclick=' Locked()'>Try to open Door</button>
 	</div>
 	<div id="Crown">
 	Continue Story
@@ -147,7 +149,7 @@
 	<div id="Locked">
 	Continue Story
 	<br><br>
-	<button onclick=' Crown()'>Take Crown off Skeleton</button>
+	<button onclick=' Crown(); Endphrase()'>Take Crown off Skeleton</button>
 	</div>
 	<div id="Treasure">
 	Continue Story
@@ -165,7 +167,7 @@
 	The liquid seems to be realising a vapor that is rising from the lid of the bottle into the<br> room.
 	Do you want to smell the bottle?
 	<br><br>
-	<button onclick=' Bottle()'>Smell Bottle</button>    <button onclick=' Painting()'>Look at the the Paintings</button> <button onclick=' Foyer()'>Go back to the Foyer</button>
+	<button onclick=' Bottle(); Endphrase()'>Smell Bottle</button>    <button onclick=' Painting()'>Look at the the Paintings</button> <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
 	<div id="Bottle">
 	You pick up the bottle and bring it to your nose. The vapor rising and you take a wiff.
@@ -207,20 +209,15 @@
 	<div id="Wrong">
 	Continue Story enter arena and whatnot
 	<br><br>
-	<button onclick=' Run2()'>Run away</button>    <button onclick=' Fight()'>Fight the monster</button>
+	<button onclick=' Run2()'>Run away</button>    <button onclick=' Fight(); Endphrase()'>Fight the monster</button>
 	</div>
 	<div id="Run2">
 	Continue Story
 	<br><br>
-	<button onclick=' Climb()'>Attempt to climb out</button>    <button onclick=' Hide()'>Hide in a small space in the wall</button>
+	<button onclick=' Climb(); Endphrase()'>Attempt to climb out</button>    <button onclick=' Hide()'>Hide in a small space in the wall</button>
 	</div>
 	<div id="Fight">
 	You lost the fight
-	<br><br>
-	<button onclick=' startGame()'>Play Again?</button>
-	</div>
-	<div id="Winfight">
-	Win the fight
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
@@ -232,7 +229,7 @@
 	<div id="Hide">
 	Wall knocked down
 	<br><br>
-	<button onclick=' Escape()'>See a chance and run out</button>    <button onclick=' Stay()'>See if the monster is dead</button>
+	<button onclick=' Escape()'>See a chance and run out</button>    <button onclick=' Stay(); Endphrase()'>See if the monster is dead</button>
 	</div>
 	<div id="Escape">
 	Continue Story
@@ -244,6 +241,7 @@
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
+	<div id="outputdiv"></div>
    </body>
   </html>
 

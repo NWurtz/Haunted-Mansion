@@ -1,13 +1,5 @@
-/*
-player = {
-    name: document.getElementById('namebox').value,
-    profession: document.getElementById('job').value,
-		 }
-*/
-
 function startGame()
 {
-
  document.getElementById('startGame').style.display ='block';
  document.getElementById('Eat').style.display ='none';
  document.getElementById('Run').style.display ='none';
@@ -17,7 +9,6 @@ function startGame()
  document.getElementById('Road').style.display ='none';
  document.getElementById('Right').style.display ='none';
  document.getElementById('Fight').style.display ='none';
- document.getElementById('Winfight').style.display ='none';
  document.getElementById('Stay').style.display ='none';
  document.getElementById('Locked').style.display ='none';
  document.getElementById('Climb').style.display ='none';
@@ -25,9 +16,10 @@ function startGame()
  document.getElementById('Treasure').style.display ='none';
 }
 
-player = {
-    name: document.getElementById('namebox').value,
-    profession: document.getElementById('job').value,
+var player = {
+    name: "document.getElementById('nameBox').value",
+    profession: "document.getElementById('jobBox').value",
+    gender: "document.getElementById('genderBox').value",
 	}
 
 function Continue()
@@ -224,11 +216,6 @@ function Fight()
 document.getElementById('Fight').style.display='block';
 document.getElementById('Wrong').style.display ='none';
 }
-function Winfight()
-{
-document.getElementById('Winfight').style.display='block';
-document.getElementById('Wrong').style.display ='none';
-}
 function Climb()
 {
 document.getElementById('Climb').style.display='block';
@@ -250,3 +237,7 @@ document.getElementById('Stay').style.display='block';
 document.getElementById('Hide').style.display ='none';
 }
 
+function Endphrase()
+{
+alert( RandomOneOf(['Better luck next time', 'YOU LOSE', 'DEATH', 'THE END', 'Dont eat the food', 'Dont drop that thun thun ey', 'Play Again?', 'Hoped you saved your game, cause you are dead', 'Boy you are stupid... and dead']));
+}
