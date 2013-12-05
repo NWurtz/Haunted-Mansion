@@ -3,6 +3,7 @@ body
 background-color:#cccccc;
 background-image:url('background1.gif');
 background-repeat:no-repeat;
+background-size:100%;
 color:red;
 text-align:center;
 }
