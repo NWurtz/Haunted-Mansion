@@ -10,7 +10,7 @@
 <body>
   <p>Choose Your Own Adventure Game</p>
   <p> Type your Name
-   <input id="nameBox" type="text" size="8"> </p>
+   <input id="nameBox" type="text" size="8" value="Nick"> </p>
    <p> Select your Gender
    <select id="genderBox">
       <option value="Male">Male</option>
@@ -29,15 +29,16 @@
     <div id="outputDiv"></div>
 
 	<div id="startGame">
-	You are driving along on a Saturday night when you realize you are low on gas.
-	The car keeps driving for two more miles before you run out and have to<br> pull to the side.
+	Hello <span id="Name"></span>! You have had a long day at work but it is time to go home.
+	You are driving along on a Saturday night when you realize you are low on gas.<br>
+	The car keeps driving for two more miles before you run out and have to pull to the side.
 	In the distance you see a old creepy abandoned mansion.
 	<br><br>
 	<button onclick=' Continue();'> Click to continue</button>
 	</div>
 	<div id="Continue">
 	There are no signs indicating gas stations nearby and there is no service for your phone anywhere.
-	There is no hope for your car anymore. Do you want to<br> walk towards the mansion or walk along the road?
+	There is no hope for your car anymore.<br> Do you want to walk towards the mansion or walk along the road?
 	<br><br>
 	<button onclick=' Foyer()'>Check out Mansion</button>    <button onclick=' Road()'>Look for help down the road</button>
 	</div>
@@ -61,7 +62,7 @@
 	<div id="Kitchen">
 	As you enter the kitchen you see many cabinets and a door to your right.
 	You see a stove, fridge, and dishwasher. Other than that the room is fairly bare.
-	Do you want to check the door,<br> search the kitchen, or head back to the foyer? 
+	<br>Do you want to check the door, search the kitchen, or head back to the foyer? 
 	<br><br>
 	<button onclick=' Door1()'>Check Door</button>    <button onclick=' Kitchen2()'>Search the Kitchen</button> <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
@@ -72,7 +73,8 @@
 	</div>
 	<div id="Kitchen2">
 	You open one cabinet in the kitchen and find enough ingredients to make your favorite kind of sandwich.
-	You also notice a loose floor board in the corner. What do you want to do?
+	You also notice a loose floor board in the corner. 
+	<br>What do you want to do?
 	<br><br>
 	<button onclick=' Food()'>Make a Sandwich</button>    <button onclick=' Floor()'>Lift loose floor board</button>
 	</div>
@@ -84,8 +86,8 @@
 	</div>
 	<div id="Eat">
 	You take a bite of what seems to be a glorious sandwich. You cant remember having a better sandwich than this one...
-	<br> you start feeling funny. Your mouth starts tingling. Soon your entire body is shaking frantically.
-	You drop the sandwich and start walking backward. how you a sandwich be doing this... how ...how...
+	<br> You start feeling funny. Your mouth starts tingling. Soon your entire body is shaking frantically.
+	<br>You drop the sandwich and start walking backward. how you a sandwich be doing this... how ...how...
 	<br> Poison!
 	<br> You are dead. Don't Trust food!
 	<br>
@@ -93,23 +95,25 @@
 	</div>
 	<div id="Floor">
 	You approach the floor and notice that the panel is loose. Curious, you take the board out of the floor
-	After the first one is taken out several other boards become loose. After 5 minutes of taking out floor boards
-	part of a stair way is revealed. Do you want to go down the stairs?
+	After the first one is taken out several other boards become loose. 
+	<br>After 5 minutes of taking out floor boards
+	part of a stairway is revealed. 
+	<br>Do you want to go down the stairs?
 	<br><br>
 	<button onclick=' Basement()'>Go Down the stairs</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
 	<div id="Basement">
 	You follow the stairs down to what appears to be a basement. The moment you get to the basement the passage you
-	you came through closes. You are trapped in the basement. Besides from the dust and cobwebs all around
+	you came through closes. You are trapped in the basement. <br>Besides from the dust and cobwebs all around
 	the stench of rotten eggs fills the air. You notice a jail cell off the left and doors on opposite sides
-	of the basement. You can see a bright light coming from one of the doors. Where do you want to go?
+	of the basement. <br>You can see a bright light coming from one of the doors. <br>Where do you want to go?
 	<br><br>
 	<button onclick=' Shining()'>Open the Shining Door</button>    <button onclick=' Jail()'>Look in the jail cell</button> <button onclick=' Boiler()'>Open other Door</button>
 	</div>
 	<div id="Boiler">
 	You enter the room and instantly notice how much warmer this room is. That's probably due to the giant boiler machine
-	in the corner. There is also a desk with several rusty screws and nails. On the wall you see a key rack which happens
-	to have a key on it. What do you want to do?
+	in the corner. There is also a desk with several rusty screws and nails. <br> On the wall you see a key rack which happens
+	to have a key on it.<br> What do you want to do?
 	<br><br>
 	<button onclick=' Key()'>Take the Key</button>    <button onclick=' Basement()'>Go back to the Basement</button>
 	</div>
@@ -120,62 +124,85 @@
 	</div>
 	<div id="Jail">
 	The jail cell looks like it hasn't been used in years. The bars wont budge and there appears to be no 
-	lock on the cell. You open the cell to see something in the shadows of the cell. As you approach
+	lock on the cell. You open the cell to see something in the shadows of the cell. <br> As you approach
 	you make out a the figure of a person. On a closer inspection it appears to be a skeleton.
-	The skeleton is wearing the same outfit you are wearing... Spooky
+	<br>The skeleton is wearing the same outfit you are wearing... Spooky. <br> It looks like person was a <span id="Job"></span>
+	just like you...
 	<br><br>
 	<button onclick=' Basement()'>Go back to the Basement</button>
 	</div>
 	<div id="Shining">
-	Continue Story
+	You open the door and see piles on piles of gold. The piles vary in height up to what you guess to be
+	10 feet high. The piles of gold are lining the outside of the room.<br> You have never seen this much gold 
+	in your entire life. Between stacks of gold you see a door on the other side of the room. 
+	<br>What do  you want to do?
 	<br><br>
 	<button onclick=' Takegold()'>Take the Gold</button>    <button onclick=' Door2()'>Go through the Door in the back</button>
 	</div>
 	<div id="Takegold">
-	Continue Story
+	There is no way someone would be able to keep track of all of this gold so what's wrong with taking a little
+	bit of gold.<br> You start to take some of the gold and stuff your pockets. Suddenly the room starts shaking. 
+	What do you want to do?
 	<br><br>
-	<button onclick=' Run(); Endphrase()'>Run for Door</button> <button onclick=' Gold(); Endphrase()'>Take MORE Gold</button>
+	<button onclick=' Run(); Endphrase2()'>Run for Door</button> <button onclick=' Gold(); Endphrase()'>Take MORE Gold</button>
 	</div>
 	<div id="Run">
-	Continue Story
+	As you run towards the door, metal bars come down from the ceiling preventing entry through the door. 
+	You spot another door as you look around the room. <br>This door was unlocked and you seem to be outside.
+	Safe... sound... and sticky? <br>
+	You reach your hand into your pocket and take out what you thought was gold, but was actually
+	Chocolate coins in gold wrapping...<br> Chocolate... Chocolate. Hey it is better than nothing.
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Gold">
-	Continue Story
+	Filled with greed you continue stuffing your pockets with gold. The shaking increases as some of the
+	gold piles start falling over.<br> You don't seem to notice you are focued on holding and getting as much 
+	gold as you can fit in your pockets. <br>You get all the gold you could ever want as one of the gold piles
+	falls over knocking you unconscious <br>as you get crushed by the gold you loved so much. 
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Door2">
-	Continue Story
+	You ignore the gold and walk through the door into a smaller room. The entire room wall to wall is
+	covered in mirrors. In the center of the room you see a skeleton sitting in throne.<br> There is 
+	a shiny gold crown on its head. Behind the throne  there is another door.<br> What do you want to do?
 	<br><br>
 	<button onclick=' Crown(); Endphrase()'>Take Crown off Skeleton</button>    <button onclick=' Locked()'>Try to open Door</button>
 	</div>
 	<div id="Crown">
-	Continue Story
+	You start walking towards the throne, and you feel yourself entering a trance but you can't escape it. 
+	The entire room reflects you walking to the throne.<br> Once at the throne you take the crown off the skeleton's head. You feel as if you are holding the 
+	entire world in your hands. <br>This power runs through your veins as you put the crown on.<br> Suddenly you 
+	hear, "At last my legacy continues..." as you become possessed by the spirit of the house.<br> Never again
+	will you leave! Muahahahahaha
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Locked">
-	Continue Story
+	The door is locked and you realize there is no other way out. I guess you better check out the throne.
 	<br><br>
 	<button onclick=' Crown(); Endphrase()'>Take Crown off Skeleton</button>
 	</div>
 	<div id="Treasure">
-	Continue Story
+	That key you found earlier actually came in handy. You open the door to what seems to be a back entrance
+	to the house. Outside you find a car.<br> The car is filled with gold, and the key seems to be in the ignition.
+	Your car is out of gas and this one is filled with gold. <br>After the crazy night you have had this feel well deserved.
+	<br>Congrats you made it out of the mansion with a prize.
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Study">
-	You head down the path that leads to the study.
-	You see a couple of paintings and desk on opposite sides of the room. What do you want to do?
+	You head down the path that leads to the study.	You see a couple of paintings and desk on opposite sides of the room. 
+	<br>There is also a bookcase in the corner of the room.
+    <br>What do you want to do?
 	<br><br>
 	<button onclick=' Painting()'>Look at the Paintings</button>    <button onclick=' Desk()'>Check the Desk</button> <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
 	<div id="Desk">
 	On the desk you find a small bottle filled with a mysterious liquid.
-	The liquid seems to be realising a vapor that is rising from the lid of the bottle into the<br> room.
-	Do you want to smell the bottle?
+	The liquid seems to be realising a vapor that is rising from the lid of the bottle into the room.
+	<br>Do you want to smell the bottle?
 	<br><br>
 	<button onclick=' Bottle(); Endphrase()'>Smell Bottle</button>    <button onclick=' Painting()'>Look at the the Paintings</button> <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
@@ -188,66 +215,85 @@
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Painting">
-	Continue Story
+	You walk over to the wall of paintings. Each painting seems to be a portrait of a different person.
+	You stand in the middle of the room looking at the paintings and realize they are all looking at you.<br>
+	It does not matter where you go. All of the paintings seem to be looking at you. Despite being
+	creeped out you notice that one of the paintings is crooked.<br> You go to adjust it to find that
+	behind the painting there is a button.<br> What do you want to do?
 	<br><br>
-	<button onclick=' Button()'>Press Button</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
+	<button onclick=' Button()'>Press Button</button>     <button onclick=' Desk()'>Check the Desk</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
 	<div id="Button">
-	Continue Story
+	You push the button and the room starts shaking. The bookcase in the corner opens up to reveal
+	a passage into another part of the house.<br> What do you want to do?
 	<br><br>
-	<button onclick=' Bookcase()'>Go down passage behind bookcase</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
+	<button onclick=' Bookcase()'>Go down passage behind bookcase</button>    <button onclick=' Desk()'>Check the Desk</button>    <button onclick=' Foyer()'>Go back to the Foyer</button>
 	</div>
 	<div id="Bookcase">
-	Continue Story
+	You walk through the passage and suddenly the passage becomes lit with torches. The moment you walk
+	through the bookcase it closes behind you.<br> I guess there is only one way to go.
 	<br><br>
 	<button onclick=' Riddle()'>Continue down Hallway</button>
 	</div>
 	<div id="Riddle">
-	On wall you see riddle
+	At the end of the hall you come across two doors separated by a wall. The doors are both locked.
+	On wall you see a chalkboard.<br> Above it is a riddle scratched into the wall. The riddle is:
 	<br><br>
 	There is a certain crime, that if it is attempted, is punishable,
-	<br>but if it is committied, it is not punishable.
+	<br>but if it is committed, it is not punishable.
 	<br> What is the crime?
 	<br><br>
 	<input id='riddleInput' type='text' size ='5'>  <button onclick=' Riddle2(riddleInput)'> Enter</button>
 	</div>
 	<div id="Right">
-	You appear outside. You leave with your life congrats.
+	The door on the left unlocks, and you go through it. You appear outside. It appears you got the riddle 
+	right and are allowed out of the house. You made it out alive.
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Wrong">
-	Continue Story enter arena and whatnot
+	The door on the right unlocks, and you go through it. As you step through the door it closes behind you.
+	You appear to be in an underground arena. <br>There is a crowd of people all around the arena chanting 
+	"Kill that <span id="Gender"></span> Scum!"<br>
+	A gate on the other side of the arena slowly opens up and a giant lion appears.<br> What do you want to do? 
 	<br><br>
-	<button onclick=' Run2()'>Run away</button>    <button onclick=' Fight(); Endphrase()'>Fight the monster</button>
+	<button onclick=' Run2()'>Run away</button>    <button onclick=' Fight(); Endphrase()'>Fight the Lion</button>
 	</div>
 	<div id="Run2">
-	Continue Story
+	You start running around the arena to avoid the lion. Surprisingly you are faster than the lion but you do not 
+	know if you can keep it up.<br> You do notice that there is a little space in the wall you can try hide in, but 
+	it may be easier to climb out of the arena when the lion is distracted. <br>What do you want to do?
 	<br><br>
 	<button onclick=' Climb(); Endphrase()'>Attempt to climb out</button>    <button onclick=' Hide()'>Hide in a small space in the wall</button>
 	</div>
 	<div id="Fight">
-	You lost the fight
+	Filled with adrenaline you charge at the lion thinking you can kill it and survive. You punch the lion but it seems
+    unaffected by your attack.<br> The lion just roars and eats you in one bite. You are dead!	
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Climb">
-	Can't climb out
+	After dodging the lion you make your way to the nearest wall. You jump and try to climb the wall but the lion just
+	jumps up and tears you down.<br> You became a snack for the lion. You are dead!
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Hide">
-	Wall knocked down
+	You run into the little space in the wall and hope that the lion doesnt see you. The lion spots where you are 
+	in the wall and charges at it. You pray for your life just as the lion rams into the wall.<br> The wall crumbles down
+	and you can see the outside world. The lion seems to be stunned at the moment. <br>What do you want to do?
 	<br><br>
-	<button onclick=' Escape()'>See a chance and run out</button>    <button onclick=' Stay(); Endphrase()'>See if the monster is dead</button>
+	<button onclick=' Escape(); Endphrase2()'>See a chance and run out</button>    <button onclick=' Stay(); Endphrase()'>See if the Lion is dead</button>
 	</div>
 	<div id="Escape">
-	Continue Story
+	You realize this is your chance and you run for it. You make it out safely but you have no idea where you are. 
+	It is better than being stuck in that house.<br> You made it out of the house alive.
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
 	<div id="Stay">
-	Continue Story
+	You go over to the lion and check to see if it is dead. On your way to check you accidently step on the lions tail
+	waking him up in a furious rage. <br>He lunges at you and you die. You are dead.
 	<br><br>
 	<button onclick=' startGame()'>Play Again?</button>
 	</div>
